@@ -22,5 +22,5 @@ addEventListener("load", () => {
      * Event Listener
      */
     /** On Scroll Body */
-    addEventListener("scroll", () => elRoot.scrollTop > 200 ? onNavScroll() : onNavScroll(true));
+    addEventListener("scroll", () => elRoot.scrollTop > 100 ? onNavScroll() : onNavScroll(true));
 });
