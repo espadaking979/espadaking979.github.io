@@ -1,43 +1,55 @@
 :root {
-  --green1: #197c4f;
-  --gray1: rgb(247, 247, 247);
+    --green1: #197c4f;
+    --gray1: rgb(247, 247, 247);
 }
 
 main {
-  min-height: 100vh;
+    min-height: 100vh;
 }
 
+/** Breakpoint lg **/
+@media (min-width: 992px) {
+    .navbar {
+        flex-direction: column !important;
+    }
+}
+
+/*
+  Navbar
+*/
 .navbar-dark .nav-link {
-  color: white !important;
+    color: white !important;
 }
 
 .navbar-light .nav-link {
-  color: black !important;
-}
-
-#content1 p.profile-company {
-  /* font-size: calc(1.3rem + 1vw); */
-  /* letter-spacing: 0.1em !important; */
+    color: black !important;
 }
 
 .btn-radius-xl {
-  color: var(--green1) !important;
-  border-radius: 1.5rem !important;
+    color: var(--green1) !important;
+    border-radius: 1.5rem !important;
 }
 .btn-radius-xl:hover {
-  color: white !important;
-  border-radius: 1.5rem !important;
+    color: white !important;
+    border-radius: 1.5rem !important;
 }
 
-/** Breakpoint xl **/
-@media (min-width: 992px) {
-  .navbar {
-    flex-direction: column !important;
-  }
-}
-.overlay {
+/*
+  Banner
+*/
+.back-container .overlay {
+    filter: brightness(0.5) grayscale(0.06);
+    -webkit-filter: brightness(0.5) grayscale(0.06);
 }
 
-.Backcontainer:hover .overlay {
-  filter: url("#sea") brightness(0.5) grayscale(0.06);
+.carousel .carousel-item {
+  height: 100vh;
+}
+
+.carousel-item img {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
 }
