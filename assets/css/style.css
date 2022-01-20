@@ -1,0 +1,37 @@
+:root {
+    --green1: #197c4f;
+    --gray1: rgb(247, 247, 247);
+}
+
+main {
+    min-height: 100vh;
+}
+
+.navbar-dark .nav-link {
+    color: white !important;
+}
+
+.navbar-light .nav-link {
+    color: black !important;
+}
+
+#content1 p.profile-company {
+    /* font-size: calc(1.3rem + 1vw); */
+    /* letter-spacing: 0.1em !important; */
+}
+
+.btn-radius-xl {
+    color: var(--green1) !important;
+    border-radius: 1.5rem !important;
+}
+.btn-radius-xl:hover {
+    color: white !important;
+    border-radius: 1.5rem !important;
+}
+
+/** Breakpoint xl **/
+@media (min-width: 992px) {
+    .navbar {
+        flex-direction: column !important;
+    }
+}
