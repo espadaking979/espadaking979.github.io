@@ -30,7 +30,7 @@ main {
 }
 
 /** Breakpoint xl **/
-@media (min-width: 1280px) {
+@media (min-width: 992px) {
     .navbar {
         flex-direction: column !important;
     }
