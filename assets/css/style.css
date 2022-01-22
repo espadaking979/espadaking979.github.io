@@ -7,17 +7,38 @@ main {
     min-height: 100vh;
 }
 
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.card {
+    margin-top: 2em;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1) !important;
+    border: none !important;
+}
+
+.card:hover img {
+    transform:scale(1.2);
+    transition: transform 1.0s;
+    -webkit-transform:scale(1.2);
+}
+
+/** Breakpoint lg **/
+@media (min-width: 992px) {
+    .navbar {
+        flex-direction: column !important;
+    }
+}
+
+/*
+  Navbar
+*/
 .navbar-dark .nav-link {
     color: white !important;
 }
 
 .navbar-light .nav-link {
     color: black !important;
-}
-
-#content1 p.profile-company {
-    /* font-size: calc(1.3rem + 1vw); */
-    /* letter-spacing: 0.1em !important; */
 }
 
 .btn-radius-xl {
@@ -29,9 +50,22 @@ main {
     border-radius: 1.5rem !important;
 }
 
-/** Breakpoint xl **/
-@media (min-width: 992px) {
-    .navbar {
-        flex-direction: column !important;
-    }
+/*
+  Banner
+*/
+.back-container .overlay {
+    filter: brightness(0.5) grayscale(0.06);
+    -webkit-filter: brightness(0.5) grayscale(0.06);
+}
+
+.carousel .carousel-item {
+  height: 100vh;
+}
+
+.carousel-item img {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
 }
