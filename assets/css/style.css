@@ -7,6 +7,22 @@ main {
     min-height: 100vh;
 }
 
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.card {
+    margin-top: 2em;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1) !important;
+    border: none !important;
+}
+
+.card:hover img {
+    transform:scale(1.2);
+    transition: transform 1.0s;
+    -webkit-transform:scale(1.2);
+}
+
 /** Breakpoint lg **/
 @media (min-width: 992px) {
     .navbar {
