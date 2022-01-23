@@ -19,8 +19,10 @@ addEventListener("load", () => {
     };
 
     /**
-     * Event Listener
+     * Event Listener 
      */
+    /** Curr Y Pos */
+    window.scrollY > 100 ? onNavScroll() : null
     /** On Scroll Body */
     addEventListener("scroll", () => elRoot.scrollTop > 100 ? onNavScroll() : onNavScroll(true));
 });
